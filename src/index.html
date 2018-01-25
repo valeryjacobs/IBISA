@@ -10,6 +10,7 @@
 
   <!-- Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/ibisa.css" rel="stylesheet">
 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -20,32 +21,43 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-sm-8 col-sm-push-2">
-        <h1 class="text-center">IBISA - Micro Insurances - Payments</h1>
-        <hr/>
+  <div id="tabs" class="container">
+    <h1 class="text-center">IBISA - Micro Insurances - Payments</h1>
+    <ul class="nav nav-pills">
+      <li class="active">
+        <a href="#usersTab" data-toggle="tab">Users</a>
+      </li>
+      <li>
+        <a href="#contractsTab" data-toggle="tab">Contracts</a>
+      </li>
+      <li>
+        <a href="#controlsTab" data-toggle="tab">Control panel</a>
+      </li>
+    </ul>
+
+    <div class="tab-content clearfix">
+      <div class="tab-pane active" id="usersTab">
+        <div id="usersRow" class="row">
+
+        </div>
+      </div>
+      <div class="tab-pane" id="contractsTab">
+        <div id="contractsRow" class="row">
+
+        </div>
+      </div>
+      <div class="tab-pane" id="controlsTab">
         <h1 class="text-left">Agency manager</h1>
         <button class="btn btn-default btn-collectpremium" type="button">Collect payments</button>
         <button class="btn btn-default btn-payindemnity" type="button">Pay indemnity</button>
         <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#addUserModal">
           Create user
         </button>
-        <hr/>
-        <br/>
-        <button class="btn btn-default btn-user" type="button">Users</button>
-        <button class="btn btn-default btn-contract" type="button">Contracts</button>
-        <hr/>
+
       </div>
     </div>
-
-    <div id="usersRow" class="row" style="display: block;">
-
-    </div>
-    <div id="contractsRow" class="row" style="display: none;">
-
-    </div>
   </div>
+
 
   <div id="userTemplate" style="display: none;">
     <div class="col-sm-6 col-md-4 col-lg-3">
