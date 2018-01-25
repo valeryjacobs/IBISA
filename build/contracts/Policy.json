@@ -1,0 +1,296 @@
+{
+  "contractName": "Policy",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "acumulatedPremiums",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "risksCovered",
+      "outputs": [
+        {
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "userID",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "userAddress",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "policyId",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x6060604052341561000f57600080fd5b6102fe8061001e6000396000f30060606040526004361061006d576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063a4b4651514610072578063b529ddb41461009b578063e302418a14610137578063e4128fb314610160578063ee89ef3a146101b5575b600080fd5b341561007d57600080fd5b6100856101de565b6040518082815260200191505060405180910390f35b34156100a657600080fd5b6100bc60048080359060200190919050506101e4565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156100fc5780820151818401526020810190506100e1565b50505050905090810190601f1680156101295780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b341561014257600080fd5b61014a6102a0565b6040518082815260200191505060405180910390f35b341561016b57600080fd5b6101736102a6565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34156101c057600080fd5b6101c86102cc565b6040518082815260200191505060405180910390f35b60005481565b6004818154811015156101f357fe5b90600052602060002090016000915090508054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102985780601f1061026d57610100808354040283529160200191610298565b820191906000526020600020905b81548152906001019060200180831161027b57829003601f168201915b505050505081565b60035481565b600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600154815600a165627a7a72305820319c222baae693482292a49cb673f96ade790e2cf468a3c055ebb2863083433a0029",
+  "deployedBytecode": "0x60606040526004361061006d576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff168063a4b4651514610072578063b529ddb41461009b578063e302418a14610137578063e4128fb314610160578063ee89ef3a146101b5575b600080fd5b341561007d57600080fd5b6100856101de565b6040518082815260200191505060405180910390f35b34156100a657600080fd5b6100bc60048080359060200190919050506101e4565b6040518080602001828103825283818151815260200191508051906020019080838360005b838110156100fc5780820151818401526020810190506100e1565b50505050905090810190601f1680156101295780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b341561014257600080fd5b61014a6102a0565b6040518082815260200191505060405180910390f35b341561016b57600080fd5b6101736102a6565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b34156101c057600080fd5b6101c86102cc565b6040518082815260200191505060405180910390f35b60005481565b6004818154811015156101f357fe5b90600052602060002090016000915090508054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156102985780601f1061026d57610100808354040283529160200191610298565b820191906000526020600020905b81548152906001019060200180831161027b57829003601f168201915b505050505081565b60035481565b600260009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b600154815600a165627a7a72305820319c222baae693482292a49cb673f96ade790e2cf468a3c055ebb2863083433a0029",
+  "sourceMap": "28:179:1:-;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "28:179:1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;51:30;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;173:28;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:2;8:100;;;99:1;94:3;90;84:5;80:1;75:3;71;64:6;52:2;49:1;45:3;40:15;;8:100;;;12:14;3:109;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;148:18:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;115:26;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;88:20;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;51:30;;;;:::o;173:28::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;148:18::-;;;;:::o;115:26::-;;;;;;;;;;;;;:::o;88:20::-;;;;:::o",
+  "source": "pragma solidity ^0.4.17;\r\n\r\ncontract Policy {\r\n    uint public acumulatedPremiums;\r\n    uint public policyId;\r\n    address public userAddress;\r\n    uint public userID;\r\n    string[] public risksCovered;\r\n\r\n}",
+  "sourcePath": "C:\\Code\\IBISAPoC\\contracts\\Policy.sol",
+  "ast": {
+    "attributes": {
+      "absolutePath": "/C/Code/IBISAPoC/contracts/Policy.sol",
+      "exportedSymbols": {
+        "Policy": [
+          82
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.4",
+            ".17"
+          ]
+        },
+        "id": 70,
+        "name": "PragmaDirective",
+        "src": "0:24:1"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            82
+          ],
+          "name": "Policy",
+          "scope": 83
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "name": "acumulatedPremiums",
+              "scope": 82,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 71,
+                "name": "ElementaryTypeName",
+                "src": "51:4:1"
+              }
+            ],
+            "id": 72,
+            "name": "VariableDeclaration",
+            "src": "51:30:1"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "policyId",
+              "scope": 82,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 73,
+                "name": "ElementaryTypeName",
+                "src": "88:4:1"
+              }
+            ],
+            "id": 74,
+            "name": "VariableDeclaration",
+            "src": "88:20:1"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "userAddress",
+              "scope": 82,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "address",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "address",
+                  "type": "address"
+                },
+                "id": 75,
+                "name": "ElementaryTypeName",
+                "src": "115:7:1"
+              }
+            ],
+            "id": 76,
+            "name": "VariableDeclaration",
+            "src": "115:26:1"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "userID",
+              "scope": 82,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint",
+                  "type": "uint256"
+                },
+                "id": 77,
+                "name": "ElementaryTypeName",
+                "src": "148:4:1"
+              }
+            ],
+            "id": 78,
+            "name": "VariableDeclaration",
+            "src": "148:18:1"
+          },
+          {
+            "attributes": {
+              "constant": false,
+              "name": "risksCovered",
+              "scope": 82,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "string storage ref[] storage ref",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "length": null,
+                  "type": "string storage ref[] storage pointer"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "string",
+                      "type": "string storage pointer"
+                    },
+                    "id": 79,
+                    "name": "ElementaryTypeName",
+                    "src": "173:6:1"
+                  }
+                ],
+                "id": 80,
+                "name": "ArrayTypeName",
+                "src": "173:8:1"
+              }
+            ],
+            "id": 81,
+            "name": "VariableDeclaration",
+            "src": "173:28:1"
+          }
+        ],
+        "id": 82,
+        "name": "ContractDefinition",
+        "src": "28:179:1"
+      }
+    ],
+    "id": 83,
+    "name": "SourceUnit",
+    "src": "0:207:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.18+commit.9cf6e910.Emscripten.clang"
+  },
+  "networks": {
+    "4447": {
+      "events": {},
+      "links": {},
+      "address": "0x8f0483125fcb9aaaefa9209d8e9d7b9c8b9fb90f"
+    },
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x8f0483125fcb9aaaefa9209d8e9d7b9c8b9fb90f"
+    }
+  },
+  "schemaVersion": "1.0.1",
+  "updatedAt": "2018-01-25T08:28:52.965Z"
+}

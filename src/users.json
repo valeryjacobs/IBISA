@@ -1,0 +1,66 @@
+[
+  {
+    "id": 0,
+    "name": "Mark Whitman",
+    "picture": "https://thumbs.dreamstime.com/b/man-farmer-icon-holding-rich-harvest-hands-logotype-store-agricultural-products-vegetable-market-natural-organic-91548073.jpg",
+    "UserID": 1000001,
+    "premium": 8,
+    "location": "-21.6794224,26.4968979"
+  },
+  {
+    "id": 1,
+    "name": "John Smith",
+    "picture": "https://thumbs.dreamstime.com/b/man-farmer-icon-holding-rich-harvest-hands-logotype-store-agricultural-products-vegetable-market-natural-organic-91548073.jpg",
+    "UserID": 1000002,
+    "premium": 10,
+    "location": "-21.6794224,26.4968979"
+  },
+  {
+    "id": 2,
+    "name": "Maggie Johnson",
+    "picture": "https://thumbs.dreamstime.com/b/man-farmer-icon-holding-rich-harvest-hands-logotype-store-agricultural-products-vegetable-market-natural-organic-91548073.jpg",
+    "UserID": 1000003,
+    "premium": 9,
+    "location": "-21.6794224,26.4968979"
+  },
+  {
+    "id": 3,
+    "name": "John Smith",
+    "picture": "https://thumbs.dreamstime.com/b/man-farmer-icon-holding-rich-harvest-hands-logotype-store-agricultural-products-vegetable-market-natural-organic-91548073.jpg",
+    "UserID": 1000004,
+    "premium": 4,
+    "location": "-21.6794224,26.4968979"
+  },
+  {
+    "id": 4,
+    "name": "Joseph Williams",
+    "picture": "https://thumbs.dreamstime.com/b/man-farmer-icon-holding-rich-harvest-hands-logotype-store-agricultural-products-vegetable-market-natural-organic-91548073.jpg",
+    "UserID": 1000005,
+    "premium": 6,
+    "location": "-21.6794224,26.4968979"
+  },
+  {
+    "id": 5,
+    "name": "Jean-Luc Soulier",
+    "picture": "https://thumbs.dreamstime.com/b/man-farmer-icon-holding-rich-harvest-hands-logotype-store-agricultural-products-vegetable-market-natural-organic-91548073.jpg",
+    "UserID": 1000006,
+    "premium": 14,
+    "location": "-21.6794224,26.4968979"
+  },
+  {
+    "id": 6,
+    "name": "Patricia Leclaire",
+    "picture": "https://thumbs.dreamstime.com/b/man-farmer-icon-holding-rich-harvest-hands-logotype-store-agricultural-products-vegetable-market-natural-organic-91548073.jpg",
+    "UserID": 1000007,
+    "premium": 14,
+    "location": "-21.6794224,26.4968979"
+  },
+  {
+    "id": 7,
+    "name": "Helen Mireax",
+    "picture": "https://thumbs.dreamstime.com/b/man-farmer-icon-holding-rich-harvest-hands-logotype-store-agricultural-products-vegetable-market-natural-organic-91548073.jpg",
+    "UserID": 1000008,
+    "premium": 12,
+    "location": "-21.6794224,26.4968979"
+  }
+]
