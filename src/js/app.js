@@ -54,7 +54,7 @@ App = {
 
   bindEvents: function() {
     $(document).on('click', '.btn-pay', App.handleAdopt);
-    $(document).on('click', '.btn-createUser', App.handleAdopt);
+    $(document).on('click', '.btn-createUser', App.handleCreatUser);
   },
 
   markAdopted: function(adopters, account) {
@@ -78,7 +78,7 @@ App = {
   handleCreatUser: function(event) {
     event.preventDefault();
 
-
+    var userId = parseInt($(event.target).data('id'));
 
     $.getJSON('User.json', function(data) {
       // Get the necessary contract artifact file and instantiate it with truffle-contract
