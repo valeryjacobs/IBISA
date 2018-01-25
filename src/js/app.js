@@ -54,7 +54,7 @@ App = {
 
   bindEvents: function() {
     $(document).on('click', '.btn-pay', App.handleAdopt);
-    $(document).on('click', '.btn-pay', App.handleAdopt);
+    $(document).on('click', '.btn-createUser', App.handleAdopt);
   },
 
   markAdopted: function(adopters, account) {
@@ -72,6 +72,21 @@ App = {
       }
     }).catch(function(err) {
       console.log(err.message);
+    });
+  },
+
+  handleCreatUser: function(event) {
+    event.preventDefault();
+
+
+
+    $.getJSON('User.json', function(data) {
+      // Get the necessary contract artifact file and instantiate it with truffle-contract
+      var userArtifact = data;
+      App.contracts.User = TruffleContract(userArtifact);
+    
+      // Set the provider for our contract
+      App.contracts.Adoption.setProvider(App.web3Provider);
     });
   },
 
