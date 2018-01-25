@@ -3,7 +3,7 @@ App = {
   contracts: {},
 
   init: function() {
-    // Load pets.
+    // Load users.
     $.getJSON('../users.json', function(data) {
       var petsRow = $('#usersRow');
       var userTemplate = $('#userTemplate');
@@ -17,6 +17,21 @@ App = {
         userTemplate.find('.btn-pay').attr('data-id', data[i].id);
 
         petsRow.append(userTemplate.html());
+      }
+    });
+
+    // Load contracts
+    $.getJSON('../contract.json', function(data) {
+      var contractRow = $('#contractsRow');
+      var contractTemplate = $('#contractTemplate');
+
+      for (i = 0; i < data.length; i ++) {
+        contractTemplate.find('.panel-title').text(data[i].policyName);
+        contractTemplate.find('img').attr('src', data[i].picture);
+        contractTemplate.find('.riskCovered').text(data[i].riskCovered);
+        contractTemplate.find('.btn-order').attr('data-id', data[i].contractID);
+
+        contractRow.append(contractTemplate.html());
       }
     });
 
@@ -54,7 +69,19 @@ App = {
 
   bindEvents: function() {
     $(document).on('click', '.btn-pay', App.handleAdopt);
-    $(document).on('click', '.btn-createUser', App.handleAdopt);
+    $(document).on('click', '.btn-pay', App.handleAdopt);
+    $(document).on('click', '.btn-user', App.usersTab);
+    $(document).on('click', '.btn-contract', App.contractsTab);
+  },
+
+  usersTab: function(event){
+    $('#usersRow').attr('style', 'display:block;');
+    $('#contractsRow').attr('style', 'display:none;');
+  },
+
+  contractsTab: function(event){
+    $('#usersRow').attr('style', 'display:none;');
+    $('#contractsRow').attr('style', 'display:block;');
   },
 
   markAdopted: function(adopters, account) {
@@ -72,21 +99,6 @@ App = {
       }
     }).catch(function(err) {
       console.log(err.message);
-    });
-  },
-
-  handleCreatUser: function(event) {
-    event.preventDefault();
-
-
-
-    $.getJSON('User.json', function(data) {
-      // Get the necessary contract artifact file and instantiate it with truffle-contract
-      var userArtifact = data;
-      App.contracts.User = TruffleContract(userArtifact);
-    
-      // Set the provider for our contract
-      App.contracts.Adoption.setProvider(App.web3Provider);
     });
   },
 
