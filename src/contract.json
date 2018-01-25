@@ -1,0 +1,26 @@
+[
+    {
+        "policyID": 0,
+        "policyName": "Flood",
+        "riskCovered": "Flood",
+        "policyPremium": 1,
+        "indemnityAmount": 1,
+        "currentAmount": "0"
+    },
+    {
+        "policyID": 0,
+        "policyName": "Drought",
+        "riskCovered": "Drought",
+        "policyPremium": 1,
+        "indemnityAmount": 1,
+        "currentAmount": "0"
+    },
+    {
+        "policyID": 0,
+        "policyName": "Infestation",
+        "riskCovered": "Infestation",
+        "policyPremium": 1,
+        "indemnityAmount": 1,
+        "currentAmount": "0"
+    }
+]
