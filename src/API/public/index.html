@@ -1,0 +1,37 @@
+<!doctype>
+<html>
+<head>
+<script type="text/javascript" src="http://localhost:3000/js/web3.js"></script>
+
+<script type="text/javascript">
+
+    var Web3 = require('web3');
+    var web3 = new Web3();
+    web3.setProvider(new web3.providers.HttpProvider("http://localhost:7545"));
+
+   
+
+    var myContract;
+
+    
+    function callExampleContract() {
+         // call the contract
+        var res = myContract.multiply(param);
+        document.getElementById('result').innerText = res.toString(10);
+    }
+
+</script>
+</head>
+<body>
+    <h1>contract</h1>
+    <div id="code"></div> 
+    <div id="status"></div>
+    <div id='create'>
+        <button type="button" onClick="createExampleContract();">create example contract</button>
+    </div>
+    <div id='call' style='visibility: hidden;'>
+        <input type="number" id="value" onkeyup='callExampleContract()'></input>
+    </div>
+    <div id="result"></div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "ibisaapi",
+  "version": "0.0.1",
+  "description": "Backend API for IBISA actors",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Valery Jacobs",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.2",
+    "solc": "^0.4.19",
+    "truffle-contract": "^3.0.2",
+    "web3": "^0.20.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.11"
+  }
+}
