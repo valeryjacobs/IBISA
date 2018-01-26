@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script type='text/javascript' src='js/knockout-3.4.2.js'>
+        // Here's my data model
+        var ViewModel = function (first, last) {
+            this.firstName = ko.observable(first);
+            this.lastName = ko.observable(last);
+
+            this.fullName = ko.computed(function () {
+                // Knockout tracks dependencies automatically. It knows that fullName depends on firstName and lastName, because these get called when evaluating fullName.
+                return this.firstName() + " " + this.lastName();
+            }, this);
+        };
+
+        ko.applyBindings(new ViewModel("Planet", "Earth")); // This makes Knockout get to work
+    </script>
+</head>
+
+<body>
+    <div class='liveExample'>
+        <p>First name:
+            <input data-bind='value: firstName' />
+        </p>
+        <p>Last name:
+            <input data-bind='value: lastName' />
+        </p>
+        <h2>Hello,
+            <span data-bind='text: fullName'> </span>!</h2>
+    </div>
+</body>
+
+</html>

@@ -4,23 +4,23 @@
         "policyName": "Flood",
         "riskCovered": "Flood",
         "policyPremium": 1,
-        "indemnityAmount": 1,
+        "indemnityAmount": 1000,
         "currentAmount": "0"
     },
     {
-        "policyID": 0,
+        "policyID": 1,
         "policyName": "Drought",
         "riskCovered": "Drought",
         "policyPremium": 1,
-        "indemnityAmount": 1,
+        "indemnityAmount": 1000,
         "currentAmount": "0"
     },
     {
-        "policyID": 0,
+        "policyID": 2,
         "policyName": "Infestation",
         "riskCovered": "Infestation",
         "policyPremium": 1,
-        "indemnityAmount": 1,
+        "indemnityAmount": 1000,
         "currentAmount": "0"
     }
 ]
