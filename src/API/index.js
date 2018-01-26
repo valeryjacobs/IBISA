@@ -17,6 +17,7 @@ app.use(function (req, res, next) {
     next();
 });
 
+//a comment
 var bodyParser = require('body-parser');
 var urlencodedParser = bodyParser.urlencoded({
     extended: false
@@ -69,8 +70,7 @@ app.post('/createUser', urlencodedParser, function (req, res) {
     var myContractReturned = MyContract.new(req.body.userID, req.body.userName, req.body.regio, req.body.inscope, {
         from: addr_account_0,
         data: bytecode,
-        gas: (gasEstimate + 1000000)
-    }, function (err, myContract) {
+        gas: (gasEstimate + 1000000)}, function (err, myContract) {
         if (!err) {
             // NOTE: The callback will fire twice!
             // Once the contract has the transactionHash property set and once its deployed on an address.
@@ -92,9 +92,6 @@ app.post('/createUser', urlencodedParser, function (req, res) {
 
                 newContractAddress = myContract.address;
                 console.log(myContract.address); // the contract address
-
-               
-
                 //    var hubContract = new web3.eth.Contract(abi, addr);
                 var MyContract = web3.eth.contract(hubDefinition.abi);
 
@@ -102,15 +99,15 @@ app.post('/createUser', urlencodedParser, function (req, res) {
                 var myContractInstance = MyContract.at('0xf25186b5081ff5ce73482ad761db0eb0d25abfbf');
 
                 var result = myContractInstance.registerUser(req.body.userID, myContract.address,{from:"0x627306090abaB3A6e1400e9345bC60c78a8BEf57",gas:1000000})
-                ;
+                
 
                 var result2 = myContractInstance. getUsers();
-                ;
+                
 
 
 
 
-                hubContract.methods.registerUser(req.body.userID, myContract.address).call().then(console.log);
+               // hubContract.methods.registerUser(req.body.userID, myContract.address).call().then(console.log);
 
             }
 
