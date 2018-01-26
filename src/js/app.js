@@ -29,7 +29,7 @@ App = {
         contractTemplate.find('.panel-title').text(data[i].policyName);
         contractTemplate.find('img').attr('src', data[i].picture);
         contractTemplate.find('.riskCovered').text(data[i].riskCovered);
-        contractTemplate.find('.btn-order').attr('data-id', data[i].contractID);
+        contractTemplate.find('.btn-orderContract').attr('data-id', data[i].contractID);
 
         contractRow.append(contractTemplate.html());
       }
@@ -74,6 +74,7 @@ App = {
     $(document).on('click', '.btn-pay', App.handleAdopt);
     $(document).on('click', '.btn-user', App.usersTab);
     $(document).on('click', '.btn-contract', App.contractsTab);
+    $(document).on('click', '.btn-orderContract', App.handleOrderContract);
   },
 
   usersTab: function(event){
@@ -84,6 +85,21 @@ App = {
   contractsTab: function(event){
     $('#usersRow').attr('style', 'display:none;');
     $('#contractsRow').attr('style', 'display:block;');
+  },
+
+  handleOrderContract: function(event){
+    event.preventDefault();
+
+    var contractID = parseInt($(event.target).data('id'));
+
+    /*$.getJSON('User.json', function(data) {
+      // Get the necessary contract artifact file and instantiate it with truffle-contract
+      var userArtifact = data;
+      App.contracts.User = TruffleContract(userArtifact);
+    
+      // Set the provider for our contract
+      App.contracts.Adoption.setProvider(App.web3Provider);
+    });*/
   },
 
   markAdopted: function(adopters, account) {
