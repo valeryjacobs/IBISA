@@ -1,3 +1,11 @@
+// Here's my data model
+var ViewModel = function(risk, indemnity) {
+  this.riskCovered = ko.observable(risk);
+  this.policyIndemnity = ko.observable(indemnity);
+};
+
+ko.applyBindings(new ViewModel("Planet", "Earth")); // This makes Knockout get to work
+
 App = {
   web3Provider: null,
   contracts: {},
@@ -15,6 +23,7 @@ App = {
         userTemplate.find('.user-premium').text(data[i].premium);
         userTemplate.find('.user-location').text(data[i].location);
         userTemplate.find('.btn-pay').attr('data-id', data[i].id);
+        userTemplate.find('.btn-selectUser').attr('data-id', data[i].id);
 
         petsRow.append(userTemplate.html());
       }
@@ -29,7 +38,7 @@ App = {
         contractTemplate.find('.panel-title').text(data[i].policyName);
         contractTemplate.find('img').attr('src', data[i].picture);
         contractTemplate.find('.riskCovered').text(data[i].riskCovered);
-        contractTemplate.find('.btn-order').attr('data-id', data[i].contractID);
+        contractTemplate.find('.btn-orderContract').attr('data-id', data[i].policyID);
 
         contractRow.append(contractTemplate.html());
       }
@@ -92,23 +101,51 @@ App = {
     return App.bindEvents();
   },
 
-  bindEvents: function () {
-    $(document).on('click', '.btn-pay', App.handleAdopt);
+  bindEvents: function() {
+    //$(document).on('click', '.btn-pay', App.handleAdopt);
 
     $(document).on('click', '.btn-createUser', App.handleCreatUser);
     $(document).on('click', '.btn-pay', App.handleAdopt);
+    $(document).on('click', '.btn-selectUser', App.selectUser);
     $(document).on('click', '.btn-user', App.usersTab);
     $(document).on('click', '.btn-contract', App.contractsTab);
+    $(document).on('click', '.btn-orderContract', App.handleOrderContract);
   },
 
-  usersTab: function (event) {
-    $('#usersRow').attr('style', 'display:block;');
-    $('#contractsRow').attr('style', 'display:none;');
+  usersTab: function(event){
+    $('#tabs a[href="#usersTab"]').tab('show');
+    //$('#usersRow').attr('style', 'display:block;');
+    //$('#contractsRow').attr('style', 'display:none;');
   },
 
-  contractsTab: function (event) {
-    $('#usersRow').attr('style', 'display:none;');
-    $('#contractsRow').attr('style', 'display:block;');
+  contractsTab: function(event){
+    $('#tabs a[href="#contractsTab"]').tab('show');
+    //$('#contractsRow').attr('style', 'display:block;');
+    //$('#usersRow').attr('style', 'display:none;');
+  },
+
+  selectUser: function(event){
+    $('#tabs a[href="#contractsTab"]').tab('show');
+    //alert($('.btn-selectUser button[data-id="'+parseInt($(event.target.parent).data('id'))+'"]'));
+    $('#FarmerSelected').text("Farmer: " + parseInt($(event.target).data('id')));
+  },
+
+  handleOrderContract: function(event){
+    event.preventDefault();
+
+    ViewModel.riskCovered = "test";
+    ViewModel.indemnity = "test";
+
+    var contractID = parseInt($(event.target).data('id'));
+
+    /*$.getJSON('User.json', function(data) {
+      // Get the necessary contract artifact file and instantiate it with truffle-contract
+      var userArtifact = data;
+      App.contracts.User = TruffleContract(userArtifact);
+    
+      // Set the provider for our contract
+      App.contracts.Adoption.setProvider(App.web3Provider);
+    });*/
   },
 
   markAdopted: function (adopters, account) {
