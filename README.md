@@ -9,17 +9,17 @@ Poor, rural farmers are exposed to extreme financial distress – especially whe
 
 The problem is that small sum insured means small premium and low or negative profit for the insurers.  Therefore the business is not viable in the traditional way and the demand is not well satisfied. 
 ### What is the Solution?
-The service IBISA (_**I**nclusive **B**lockchain **I**nsurance using **S**pace **A**ssets_) is a peer-to-peer, decentralized mutual microinsurance service, that utilizes space assets (Earth Observation) and "wisdom of the crowd", made possible by the blockchain smart contracts, to lower costs of resolving claims, extend geographic penetration and build accurate risks profiles. All this is achieved while keeping the financials profitable.
+The service IBISA (_**I**nclusive **B**lockchain **I**nsurance using **S**pace **A**ssets_) is a peer-to-peer, decentralized mutual risk sharing service, that utilizes space assets (Earth Observation) and "wisdom of the crowd", made possible by the blockchain smart contracts, to lower costs of resolving claims, extend geographic penetration and build accurate risks profiles. All this is achieved while keeping the financials profitable.
 
-To anchor this innovative solution into the field reality and to be able to promote the associated microinsurance service, we have already engaged with several heavyweight micro-finance NGO's that will provide inputs and feedback and eventually do the promotion to their target beneficiaries.
+To anchor this innovative solution into the field reality and to be able to promote the associated risk sharing service, we have already engaged with several heavyweight micro-finance NGO's that will provide inputs and feedback and eventually do the promotion to their target beneficiaries.
 
 In February 2018, IBISA received **_an award from the European Space Agency_** to further progress.
 
 ### What is the Product?
-At the first stage IBISA supports microinsurance of index-based risks.
+At the first stage IBISA supports risk sharing of index-based risks.
 
 Index-based risks are the risks that a regional index (crop, drought, pests, crickets etc.) may exceed a value. IBISA uses innovative solutions to address persistent limitations that were inherited from traditional insurance practices:
-* IBISA uses _blockchain-based micro-payment_ direct from each individual wallet in a form of mutualised insurance, to lower the cost and the risk of premium collection and to manage the insured risk on a worldwide scale1;
+* IBISA uses _blockchain-based micro-payment_ direct from each individual wallet in a form of mutualised risk sharing, to lower the cost and the risk of premium collection and to share the risk on a worldwide scale;
 * IBISA uses _Earth Observation (EO) data_ to support risk and claim assessment of index-based risks;
 * IBISA uses _blockchain-based community damage assessment_ (the so-called "wisdom of the crowd"), to automate and accelerate assessment, payment and lower operations costs;
 * IBISA uses _blockchain smart contracts_, to bring transparency to the complete process, including the economic reward model.
@@ -65,4 +65,4 @@ Each one will transfer to its share to the indemnity to the damaged wallet.
 The representative community wallet will also contribute. We should see the total of the damaged wallet increase of the value of the indemnity.
 # Want to know more?
 
-Read more about IBISA [here](http://www.bitbank.lu/ibisa)
+Read more about IBISA [**_here_**](http://www.bitbank.lu/ibisa)
